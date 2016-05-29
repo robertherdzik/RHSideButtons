@@ -1,9 +1,6 @@
 # RHSideButtons
 
 ## Usage
-
-![Preview](https://github.com/robertherdzik/RHSideButtons/blob/master/Demo/RHSideButtons.gif)
-
 You just need implement `RHSideButtonsDataSource` and `RHSideButtonsDelegate` similar to well-known UIKit design.
 
 ```swift
@@ -61,6 +58,8 @@ func buttonAtIndex(index: Int) -> RHButtonView
 func didSelectTriggerButton(state: RHButtonState)
 func didSelectButtonAtIndex(index: Int)
 ```
+
+![Preview](https://github.com/robertherdzik/RHSideButtons/blob/master/Demo/RHSideButtons.gif)
 
 ## Support for left-handers :)
 ![Preview](https://github.com/robertherdzik/RHSideButtons/blob/master/Demo/RHSideButtons_Left.gif)
