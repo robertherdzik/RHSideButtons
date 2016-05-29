@@ -43,7 +43,7 @@ let button_3 = RHButtonView {
 
 buttonsArr.appendContentsOf([button_1, button_2, button_3])
 
-As it is in tableView, now you should reload buttons with new values
+//As it is in tableView, now you should reload buttons with new values
 sideButtonsView.reloadButtons()
 ```
 
