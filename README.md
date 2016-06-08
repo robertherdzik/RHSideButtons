@@ -64,7 +64,7 @@ func didSelectButtonAtIndex(index: Int)
 ## Support for left-handers :)
 ![Preview](https://github.com/robertherdzik/RHSideButtons/blob/master/Demo/RHSideButtons_Left.gif)
 
-If you decide to position RHSideButtons on the right site of view the will dissapears to the right side of screen automatically.
+If you decide to position RHSideButtons on the left site of view, buttons will dissapears to the left side of screen automatically.
 
 e.g.:
 ```swift
