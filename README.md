@@ -49,14 +49,14 @@ sideButtonsView.reloadButtons()
 
 ### RHSideButtonsDataSource
 ```swift
-func numberOfButtons() -> Int
-func buttonAtIndex(index: Int) -> RHButtonView
+func sideButtonsNumberOfButtons(sideButtons: RHSideButtons) -> Int
+func sideButtons(sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView
 ```
 
 ### RHSideButtonsDelegate
 ```swift
-func didSelectTriggerButton(state: RHButtonState)
-func didSelectButtonAtIndex(index: Int)
+func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
+func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 ```
 
 ![Preview](https://github.com/robertherdzik/RHSideButtons/blob/master/Demo/RHSideButtons.gif)
