@@ -9,13 +9,13 @@
 import UIKit
 
 protocol RHSideButtonsDelegate: class {
-    func didSelectButtonAtIndex(index: Int)
-    func didSelectTriggerButton(state: RHButtonState)
+    func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
+    func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 }
 
 protocol RHSideButtonsDataSource: class {
-    func numberOfButtons() -> Int
-    func buttonAtIndex(index: Int) -> RHButtonView
+    func sideButtonsNumberOfButtons(sideButtons: RHSideButtons) -> Int
+    func sideButtons(sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView
 }
 
 enum RHButtonState: Int {
@@ -129,10 +129,10 @@ class RHSideButtons {
     }
     
     private func addButtons() {
-        guard let numberOfButtons = dataSource?.numberOfButtons() else { return }
+        guard let numberOfButtons = dataSource?.sideButtonsNumberOfButtons(self) else { return }
         
         for index in 0..<numberOfButtons {
-            guard let button = dataSource?.buttonAtIndex(index) else { return }
+            guard let button = dataSource?.sideButtons(self, buttonAtIndex: index) else { return }
             
             button.delegate = self
             parentView?.addSubview(button)
@@ -204,13 +204,13 @@ extension RHSideButtons: RHButtonViewDelegate {
     
     func didSelectButton(buttonView: RHButtonView) {
         if let indexOfButton = buttonsArr.indexOf(buttonView) {
-            delegate?.didSelectButtonAtIndex(indexOfButton)
+            delegate?.sideButtons(self, didSelectButtonAtIndex: indexOfButton)
            
             state = .Hidden
         } else {
-            delegate?.didSelectTriggerButton(state)
-            
             state = state == .Shown ? .Hidden : .Shown
+            
+            delegate?.sideButtons(self, didTriggerButtonChangeStateTo: state)
         }
     }
 }

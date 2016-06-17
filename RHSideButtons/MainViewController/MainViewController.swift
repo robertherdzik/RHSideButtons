@@ -83,23 +83,23 @@ class MainViewController: UIViewController {
 
 extension MainViewController: RHSideButtonsDataSource {
     
-    func numberOfButtons() -> Int {
+    func sideButtonsNumberOfButtons(sideButtons: RHSideButtons) -> Int {
         return buttonsArr.count
     }
     
-    func buttonAtIndex(index: Int) -> RHButtonView {
+    func sideButtons(sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView {
         return buttonsArr[index]
     }
 }
 
 extension MainViewController: RHSideButtonsDelegate {
     
-    func didSelectTriggerButton(state: RHButtonState) {
-        print("🍭 Trigger button")
+    func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int) {
+        print("🍭 button index tapped: \(index)")
     }
     
-    func didSelectButtonAtIndex(index: Int) {
-        print("🍭 button index tapped: \(index)")
+    func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState) {
+        print("🍭 Trigger button")
     }
 }
 
