@@ -1,5 +1,8 @@
 # RHSideButtons
 
+## Play with it 😎
+<iframe src="https://appetize.io/embed/zanve819jr7g7dmh326a924pq4?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
+
 ## Usage
 You just need implement `RHSideButtonsDataSource` and `RHSideButtonsDelegate` similar to well-known UIKit design.
 
