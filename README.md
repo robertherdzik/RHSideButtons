@@ -1,4 +1,4 @@
-# RHSideButtons
+# RHSideButtons 🌶
 
 ## Play with it 😎
 <iframe src="https://appetize.io/embed/zanve819jr7g7dmh326a924pq4?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
@@ -28,7 +28,7 @@ override func viewDidAppear(animated: Bool) {
 }
 ```
 ```swift
-//Finally you should create array of button which will feed our dataSource and Delegate methods :) e.g.:
+//Finally you should create array of buttons which will feed our dataSource and Delegate methods :) e.g.:
 let button_1 = RHButtonView {
     $0.image = UIImage(named: "icon_1")
     $0.hasShadow = true
@@ -46,7 +46,7 @@ let button_3 = RHButtonView {
 
 buttonsArr.appendContentsOf([button_1, button_2, button_3])
 
-//As it is in tableView, now you should reload buttons with new values
+//Similar as it is in TableView, now you should reload buttons with new values
 sideButtonsView.reloadButtons()
 ```
 
@@ -65,11 +65,12 @@ func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state
 <img src ="./Demo/RHSideButtons.gif" width="360" height="640"/>
 
 ## Support for left-handers :)
-<img src ="./Demo/RHSideButtons_Left.gif" width="360" height="640"/>
-
 If you decide to position RHSideButtons on the left site of view, buttons will dissapears to the left side of screen automatically.
 
 e.g.:
 ```swift
 sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
 ```
+
+<img src ="./Demo/RHSideButtons_Left.gif" width="360" height="640"/>
+
