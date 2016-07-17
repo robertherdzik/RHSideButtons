@@ -158,7 +158,7 @@ class RHSideButtons {
     }
     
     /**
-     Use this method for positioning of trigger button (should be invoken right after your view of ViewController is loaded).
+     Use this method for positioning of trigger button (should be invoken right after your view of ViewController is loaded and has proper frame).
      
      - parameter position: position of right button, have in mind that if you set position of trigger button you need to substract/add his width or height (it depends on position in view axis)
      */
@@ -167,6 +167,8 @@ class RHSideButtons {
         let offset = triggerButton.frame.size.width/2 * scale
         let newPosition = state == .Hidden ? position : CGPoint(x: position.x + offset, y: position.y + offset)
         triggerButton.frame = CGRect(origin: newPosition, size: triggerButton.frame.size)
+        
+        reloadButtons()
     }
     
     /**

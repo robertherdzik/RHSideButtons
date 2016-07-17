@@ -23,8 +23,7 @@ sideButtonsView.dataSource = self
 override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
 
-    sideBttns?.setTriggerButtonPosition(CGPoint(x: bounds.width - 85, y: frame.size.height - 85))
-    sideButtonsView.reloadButtons()
+    sideBttns?.setTriggerButtonPosition(CGPoint(x: bounds.width - 85, y: bounds.height - 85))
 }
 ```
 ```swift
@@ -73,4 +72,9 @@ sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
 ```
 
 <img src ="./Demo/RHSideButtons_Left.gif" width="360" height="640"/>
+
+
+## Check the Demo project 
+
+Please check out the demo project, you can see there what is the best (in my opinion 🤔) way to implement my buttons. Please keep in mind that Readme contains the simplest way to implement this control.
 
