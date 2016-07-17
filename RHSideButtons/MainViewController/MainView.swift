@@ -10,6 +10,10 @@ import UIKit
 
 class MainView: UIView {
     
+    private let triggerButtonMargin = CGFloat(85)
+    
+    var sideButtonsView: RHSideButtons?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -22,10 +26,16 @@ class MainView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-
+        
+        // Layout Buttons
+        sideButtonsView?.setTriggerButtonPosition(CGPoint(x: bounds.width - triggerButtonMargin, y: bounds.height - triggerButtonMargin))
     }
     
     private func setup() {
         backgroundColor = UIColor.lightGrayColor()
+    }
+    
+    func set(sideButtonsView view: RHSideButtons) {
+        sideButtonsView = view
     }
 }

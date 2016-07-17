@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B186F63F1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */; };
 		E1109DF01CF4ACB000FD9EEE /* RHSideButtonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */; };
 		E1C1CDB41CF72B1F00B33D15 /* RHTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */; };
 		E1C1CDC11CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsDemoPresenter.swift; sourceTree = "<group>"; };
 		E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtonAnimator.swift; path = RHSideButtons/RHSideButtonAnimator.swift; sourceTree = "<group>"; };
 		E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHTriggerButtonView.swift; path = RHSideButtons/RHTriggerButtonView.swift; sourceTree = "<group>"; };
 		E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtonAnimatorProtocol.swift; path = RHSideButtons/RHSideButtonAnimatorProtocol.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */,
 				E1D445BC1CEF7BE0003AF888 /* MainView.swift */,
+				B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				E1D445BF1CEF7BF8003AF888 /* MainViewController.swift in Sources */,
 				E1109DF01CF4ACB000FD9EEE /* RHSideButtonAnimator.swift in Sources */,
 				E1D445BD1CEF7BE0003AF888 /* MainView.swift in Sources */,
+				B186F63F1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift in Sources */,
 				E1D4459C1CEF79ED003AF888 /* AppDelegate.swift in Sources */,
 				E1C1CDB41CF72B1F00B33D15 /* RHTriggerButtonView.swift in Sources */,
 				E1D445C21CEF7CF2003AF888 /* RHSideButtons.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var sideButtonsView: RHSideButtons!
+    var demoPresenter: ButtonsDemoPresenter?
     var buttonsArr = [RHButtonView]()
     
     override func viewDidLoad() {
@@ -19,29 +19,24 @@ class MainViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+     
+        castView().sideButtonsView?.reloadButtons()
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        sideButtonsView.setTriggerButtonPosition(CGPoint(x: castView().bounds.width - 85, y: castView().frame.size.height - 85))
-        sideButtonsView.reloadButtons()
-        
-        performSelector(#selector(delayShow), withObject: nil, afterDelay: 1)
-        performSelector(#selector(delayHide), withObject: nil, afterDelay: 2)
-    }
-    
-    func delayShow() {
-        sideButtonsView.showButtons()
-    }
-    
-    func delayHide() {
-        sideButtonsView.hideButtons()
+        // We want to see demo after view did appear
+        demoPresenter?.start()
     }
     
     override func loadView() {
         view = MainView()
     }
     
-    private func castView() -> MainView {
+    func castView() -> MainView {
         return view as! MainView
     }
     
@@ -56,28 +51,24 @@ class MainViewController: UIViewController {
             $0.hasShadow = true
         }
         
-        sideButtonsView = RHSideButtons(parentView: castView(), triggerButton: triggerButton)
+        let sideButtonsView = RHSideButtons(parentView: castView(), triggerButton: triggerButton)
         sideButtonsView.delegate = self
         sideButtonsView.dataSource = self
         
-        let button_1 = RHButtonView {
-            $0.image = UIImage(named: "icon_1")
-            $0.hasShadow = true
+        for index in 1...3 {
+            buttonsArr.append(generateButton(withImgName: "icon_\(index)"))
         }
         
-        let button_2 = RHButtonView {
-            $0.image = UIImage(named: "icon_2")
+        castView().set(sideButtonsView: sideButtonsView)
+        castView().sideButtonsView?.reloadButtons()
+    }
+    
+    private func generateButton(withImgName imgName: String) -> RHButtonView {
+        
+        return RHButtonView {
+            $0.image = UIImage(named: imgName)
             $0.hasShadow = true
         }
-        
-        let button_3 = RHButtonView {
-            $0.image = UIImage(named: "icon_3")
-            $0.hasShadow = true
-        }
-        
-        buttonsArr.appendContentsOf([button_1, button_2, button_3])
-     
-        sideButtonsView.reloadButtons()
     }
 }
 

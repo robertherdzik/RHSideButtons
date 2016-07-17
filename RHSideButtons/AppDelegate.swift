@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func getPreparedNavigationController() -> UINavigationController {
         let mainViewController = MainViewController(nibName: nil, bundle: nil)
         
+        // I would like to show you how this control looks like, so simple demo presenter class was needed
+        let demoPresenter = ButtonsDemoPresenter(mainViewController: mainViewController)
+        mainViewController.demoPresenter = demoPresenter
+        
         return UINavigationController(rootViewController: mainViewController)
     }
 }
