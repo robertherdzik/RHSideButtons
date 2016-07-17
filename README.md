@@ -19,9 +19,9 @@ sideButtonsView = RHSideButtons(parentView: view, triggerButton: triggerButton)
 sideButtonsView.delegate = self
 sideButtonsView.dataSource = self
 
-// When SideButtons controller is initialized properly you should set thier position in view in e.g. viewDidLoad method:
-override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(animated)
+// When SideButtons controller is initialized properly you should set thier position in view in e.g. viewWillAppear method:
+override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
 
     sideBttns?.setTriggerButtonPosition(CGPoint(x: bounds.width - 85, y: bounds.height - 85))
 }
