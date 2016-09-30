@@ -1,4 +1,9 @@
+<p align="center">
+<img src ="./ReadmeAssets/RHSideButtonsHeadLogo.png" width="800" height="300"/>
+</p>
+
 # RHSideButtons 🌶
+Library provides easy to implement variation of Android (Material Design) Floating Action Button for iOS. You can use it as your app small side menu. 🌶
 
 ## Play with it 😎
 <iframe src="https://appetize.io/embed/zanve819jr7g7dmh326a924pq4?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
@@ -26,6 +31,9 @@ override func viewWillAppear(animated: Bool) {
     sideBttns?.setTriggerButtonPosition(CGPoint(x: bounds.width - 85, y: bounds.height - 85))
 }
 ```
+
+... let us prepare our data models for buttons 💥 below you can see one of many ways to do this:
+
 ```swift
 //Finally you should create array of buttons which will feed our dataSource and Delegate methods :) e.g.:
 let button_1 = RHButtonView {
@@ -48,6 +56,7 @@ buttonsArr.appendContentsOf([button_1, button_2, button_3])
 //Similar as it is in TableView, now you should reload buttons with new values
 sideButtonsView.reloadButtons()
 ```
+💡 important thing is that you need to reload buttons when your datasource has changed using ```reloadButtons()``` method (😱 simple right❓)
 
 ### RHSideButtonsDataSource
 ```swift
@@ -60,8 +69,9 @@ func sideButtons(sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButt
 func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
 func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 ```
-
-<img src ="./Demo/RHSideButtons.gif" width="360" height="640"/>
+<p align="center">
+<img src ="./Demo/RHSideButtons.gif" width="252" height="448" align="center"/>
+</p>
 
 ## Support for left-handers :)
 If you decide to position RHSideButtons on the left site of view, buttons will dissapears to the left side of screen automatically.
@@ -71,7 +81,9 @@ e.g.:
 sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
 ```
 
-<img src ="./Demo/RHSideButtons_Left.gif" width="360" height="640"/>
+<p align="center">
+<img src ="./Demo/RHSideButtons_Left.gif" width="252" height="448" align="center"/>
+</p>
 
 
 ## Check the Demo project 
