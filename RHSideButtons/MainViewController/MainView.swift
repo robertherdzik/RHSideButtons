@@ -10,7 +10,7 @@ import UIKit
 
 class MainView: UIView {
     
-    private let triggerButtonMargin = CGFloat(85)
+    fileprivate let triggerButtonMargin = CGFloat(85)
     
     var sideButtonsView: RHSideButtons?
     
@@ -31,8 +31,8 @@ class MainView: UIView {
         sideButtonsView?.setTriggerButtonPosition(CGPoint(x: bounds.width - triggerButtonMargin, y: bounds.height - triggerButtonMargin))
     }
     
-    private func setup() {
-        backgroundColor = UIColor.lightGrayColor()
+    fileprivate func setup() {
+        backgroundColor = UIColor.lightGray
     }
     
     func set(sideButtonsView view: RHSideButtons) {

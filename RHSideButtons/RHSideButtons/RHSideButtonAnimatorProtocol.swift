@@ -9,6 +9,6 @@
 import UIKit
 
 protocol RHSideButtonAnimatorProtocol {
-    func animateTriggerButton(button: RHButtonView, state: RHButtonState, completition: (() -> ())?)
-    func animateButtonsPositionX(buttonsArr: [RHButtonView], targetPos: CGPoint, completition: (() -> ())?)
+    func animateTriggerButton(_ button: RHButtonView, state: RHButtonState, completition: (() -> ())?)
+    func animateButtonsPositionX(_ buttonsArr: [RHButtonView], targetPos: CGPoint, completition: (() -> ())?)
 }

@@ -19,8 +19,8 @@ class ButtonsDemoPresenter: NSObject {
     }
     
     func start() {
-        performSelector(#selector(delayShow), withObject: nil, afterDelay: 1)
-        performSelector(#selector(delayHide), withObject: nil, afterDelay: 2)
+        perform(#selector(delayShow), with: nil, afterDelay: 1)
+        perform(#selector(delayHide), with: nil, afterDelay: 2)
     }
     
     func delayShow() {

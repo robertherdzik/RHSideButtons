@@ -19,13 +19,13 @@ class MainViewController: UIViewController {
         setup()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
      
         castView().sideButtonsView?.reloadButtons()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         // We want to see demo after view did appear
@@ -40,11 +40,11 @@ class MainViewController: UIViewController {
         return view as! MainView
     }
     
-    private func setup() {
+    fileprivate func setup() {
         addSideButtons()
     }
     
-    private func addSideButtons() {
+    fileprivate func addSideButtons() {
         
         let triggerButton = RHTriggerButtonView(pressedImage: UIImage(named: "exit_icon")!) {
             $0.image = UIImage(named: "trigger_img")
@@ -63,7 +63,7 @@ class MainViewController: UIViewController {
         castView().sideButtonsView?.reloadButtons()
     }
     
-    private func generateButton(withImgName imgName: String) -> RHButtonView {
+    fileprivate func generateButton(withImgName imgName: String) -> RHButtonView {
         
         return RHButtonView {
             $0.image = UIImage(named: imgName)
@@ -74,22 +74,22 @@ class MainViewController: UIViewController {
 
 extension MainViewController: RHSideButtonsDataSource {
     
-    func sideButtonsNumberOfButtons(sideButtons: RHSideButtons) -> Int {
+    func sideButtonsNumberOfButtons(_ sideButtons: RHSideButtons) -> Int {
         return buttonsArr.count
     }
     
-    func sideButtons(sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView {
+    func sideButtons(_ sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView {
         return buttonsArr[index]
     }
 }
 
 extension MainViewController: RHSideButtonsDelegate {
     
-    func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int) {
+    func sideButtons(_ sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int) {
         print("🍭 button index tapped: \(index)")
     }
     
-    func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState) {
+    func sideButtons(_ sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState) {
         print("🍭 Trigger button")
     }
 }

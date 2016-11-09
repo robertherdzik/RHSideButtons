@@ -10,8 +10,8 @@ import UIKit
 
 class RHTriggerButtonView: RHButtonView {
     
-    private var notPressedImageHolder: UIImage?
-    private var pressedImage: UIImage?
+    fileprivate var notPressedImageHolder: UIImage?
+    fileprivate var pressedImage: UIImage?
     
     init(frame: CGRect, pressedImage: UIImage) {
         self.pressedImage = pressedImage
@@ -37,7 +37,7 @@ class RHTriggerButtonView: RHButtonView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func markAsPressed(pressed: Bool) {
+    func markAsPressed(_ pressed: Bool) {
         if notPressedImageHolder == nil { notPressedImageHolder = image }
         
         image = pressed ? pressedImage : notPressedImageHolder
