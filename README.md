@@ -86,6 +86,12 @@ sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
 </p>
 
 
+## Swift support
+| Library ver| Swift ver| 
+| ------------- |:-------------:| 
+| 1.0   | 2.2 |
+| 1.0.1   | 3.0 |
+
 ## Check the Demo project 
 
 Please check out the demo project, you can see there what is the best (in my opinion 🤔) way to implement my buttons. Please keep in mind that Readme contains the simplest way to implement this control.
