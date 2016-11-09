@@ -9,7 +9,7 @@
 import UIKit
 
 protocol RHButtonViewDelegate: class {
-    func didSelectButton(buttonView: RHButtonView)
+    func didSelectButton(_ buttonView: RHButtonView)
 }
 
 class RHButtonView: UIView, RHButtonViewConfigProtocol {
@@ -18,7 +18,7 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
     
     weak var delegate: RHButtonViewDelegate?
     
-    var bgColor: UIColor = UIColor.whiteColor() {
+    var bgColor: UIColor = UIColor.white {
         didSet {
             backgroundColor = bgColor
         }
@@ -40,7 +40,7 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
     }
     var imgView: UIImageView?
     
-    private let overlayView = UIView()
+    fileprivate let overlayView = UIView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -84,62 +84,62 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
         setShadowOffset(false)
     }
     
-    private func setup() {
+    fileprivate func setup() {
         setupOverlayLayer()
     }
     
-    private func setupOverlayLayer() {
-        overlayView.backgroundColor = UIColor.clearColor()
-        overlayView.userInteractionEnabled = false
+    fileprivate func setupOverlayLayer() {
+        overlayView.backgroundColor = UIColor.clear
+        overlayView.isUserInteractionEnabled = false
         addSubview(overlayView)
     }
     
-    private func setupImageViewIfNeeded() {
+    fileprivate func setupImageViewIfNeeded() {
         if imgView != nil { return }
         
         imgView = UIImageView(image: image)
         insertSubview(imgView!, belowSubview: overlayView)
     }
     
-    private func updateImageView() {
+    fileprivate func updateImageView() {
         imgView?.image = image
-        imgView?.contentMode = .ScaleAspectFit
+        imgView?.contentMode = .scaleAspectFit
         imgView?.clipsToBounds = true
     }
     
-    private func addShadow() {
+    fileprivate func addShadow() {
         layer.shadowOpacity = 0.8
-        layer.shadowColor = UIColor.darkGrayColor().CGColor
+        layer.shadowColor = UIColor.darkGray.cgColor
     }
     
-    private func removeShadow() {
+    fileprivate func removeShadow() {
         layer.shadowOpacity = 0
     }
     
-    private func setShadowOffset(isSelected: Bool) {
+    fileprivate func setShadowOffset(_ isSelected: Bool) {
         let shadowOffsetX = isSelected ? CGFloat(1) : CGFloat(5)
         let shadowOffsetY = isSelected ? CGFloat(0) : CGFloat(3)
         layer.shadowOffset = CGSize(width: bounds.origin.x + shadowOffsetX, height: bounds.origin.y + shadowOffsetY)
     }
     
-    private func adjustAppearanceForStateSelected(selected: Bool) {
+    fileprivate func adjustAppearanceForStateSelected(_ selected: Bool) {
         setShadowOffset(selected)
         setOverlayColorForState(selected)
     }
     
-    private func setOverlayColorForState(selected: Bool) {
-        overlayView.backgroundColor = selected ? UIColor.blackColor().colorWithAlphaComponent(0.2) : UIColor.clearColor()
+    fileprivate func setOverlayColorForState(_ selected: Bool) {
+        overlayView.backgroundColor = selected ? UIColor.black.withAlphaComponent(0.2) : UIColor.clear
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         adjustAppearanceForStateSelected(true)
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         adjustAppearanceForStateSelected(false)
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         delegate?.didSelectButton(self)
         adjustAppearanceForStateSelected(false)
     }

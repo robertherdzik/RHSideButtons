@@ -9,18 +9,18 @@
 import UIKit
 
 protocol RHSideButtonsDelegate: class {
-    func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
-    func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
+    func sideButtons(_ sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
+    func sideButtons(_ sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 }
 
 protocol RHSideButtonsDataSource: class {
-    func sideButtonsNumberOfButtons(sideButtons: RHSideButtons) -> Int
-    func sideButtons(sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView
+    func sideButtonsNumberOfButtons(_ sideButtons: RHSideButtons) -> Int
+    func sideButtons(_ sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView
 }
 
 enum RHButtonState: Int {
-    case Hidden = 0
-    case Shown
+    case hidden = 0
+    case shown
 }
 
 class RHSideButtons {
@@ -29,9 +29,9 @@ class RHSideButtons {
     weak var delegate: RHSideButtonsDelegate?
     weak var dataSource: RHSideButtonsDataSource?
 
-    private let buttonSize = CGSize(width: 55, height: 55)
-    private let verticalSpacing = CGFloat(15)
-    private var hideStateOffset: CGFloat {
+    fileprivate let buttonSize = CGSize(width: 55, height: 55)
+    fileprivate let verticalSpacing = CGFloat(15)
+    fileprivate var hideStateOffset: CGFloat {
         get {
             guard let parentView = parentView else { return 0 }
             
@@ -46,14 +46,14 @@ class RHSideButtons {
         }
     }
     
-    private var buttonsArr = [RHButtonView]()
-    private let buttonsAnimator: RHSideButtonAnimatorProtocol
-    private var descriptionArr = [String]()
+    fileprivate var buttonsArr = [RHButtonView]()
+    fileprivate let buttonsAnimator: RHSideButtonAnimatorProtocol
+    fileprivate var descriptionArr = [String]()
     
-    private(set) var state: RHButtonState = .Hidden {
+    fileprivate(set) var state: RHButtonState = .hidden {
         didSet {
             aniamateButtonForState(state) {}
-            markTriggerButtonAsPressed(state == .Shown)
+            markTriggerButtonAsPressed(state == .shown)
             buttonsAnimator.animateTriggerButton(triggerButton, state: state) {}
         }
     }
@@ -73,33 +73,33 @@ class RHSideButtons {
         self.init(parentView: parentView, triggerButton: triggerButton, buttonsAnimator: RHSideButtonAnimator())
     }
     
-    private func setup() {
+    fileprivate func setup() {
         setDefaultTriggerButtonPosition()
         setupTriggerButton()
         layoutButtons()
     }
     
-    private func setupTriggerButton() {
+    fileprivate func setupTriggerButton() {
         guard let parentView = parentView else { return }
 
         setDefaultTriggerButtonPosition()
         triggerButton.delegate = self
         
         parentView.addSubview(triggerButton)
-        parentView.bringSubviewToFront(triggerButton)
+        parentView.bringSubview(toFront: triggerButton)
     }
     
-    private func setDefaultTriggerButtonPosition() {
+    fileprivate func setDefaultTriggerButtonPosition() {
         guard let parentView = parentView else { return }
         
         triggerButton.frame = CGRect(x: parentView.bounds.width - buttonSize.width, y: parentView.bounds.height - buttonSize.height, width: buttonSize.width, height: buttonSize.height)
     }
     
-    private func markTriggerButtonAsPressed(pressed: Bool) {
+    fileprivate func markTriggerButtonAsPressed(_ pressed: Bool) {
         triggerButton.markAsPressed(pressed)
     }
     
-    private func layoutButtons() {
+    fileprivate func layoutButtons() {
         var prevButton: RHButtonView? = nil
         for button in buttonsArr {
             var buttonPosY = CGFloat(0)
@@ -119,16 +119,16 @@ class RHSideButtons {
         }
     }
 
-    private func getButtonPoxXAccordingToState(state: RHButtonState) -> CGFloat {
-        return state == .Hidden ? hideStateOffset : triggerButton.frame.midX - buttonSize.width/2
+    fileprivate func getButtonPoxXAccordingToState(_ state: RHButtonState) -> CGFloat {
+        return state == .hidden ? hideStateOffset : triggerButton.frame.midX - buttonSize.width/2
     }
     
-    private func removeButtons() {
+    fileprivate func removeButtons() {
         _ = buttonsArr.map{ $0.removeFromSuperview() }
         buttonsArr.removeAll()
     }
     
-    private func addButtons() {
+    fileprivate func addButtons() {
         guard let numberOfButtons = dataSource?.sideButtonsNumberOfButtons(self) else { return }
         
         for index in 0..<numberOfButtons {
@@ -136,12 +136,12 @@ class RHSideButtons {
             
             button.delegate = self
             parentView?.addSubview(button)
-            parentView?.bringSubviewToFront(button)
+            parentView?.bringSubview(toFront: button)
             buttonsArr.append(button)
         }
     }
     
-    private func aniamateButtonForState(state: RHButtonState, completition: (() -> ())? = nil) {
+    fileprivate func aniamateButtonForState(_ state: RHButtonState, completition: (() -> ())? = nil) {
         let buttonPosX = getButtonPoxXAccordingToState(state)
         let targetPoint = CGPoint(x: buttonPosX, y: 0)
         
@@ -162,10 +162,10 @@ class RHSideButtons {
      
      - parameter position: position of right button, have in mind that if you set position of trigger button you need to substract/add his width or height (it depends on position in view axis)
      */
-    func setTriggerButtonPosition(position: CGPoint) {
-        let scale = state == .Hidden ? CGFloat(1) : CGFloat (0.5)
+    func setTriggerButtonPosition(_ position: CGPoint) {
+        let scale = state == .hidden ? CGFloat(1) : CGFloat (0.5)
         let offset = triggerButton.frame.size.width/2 * scale
-        let newPosition = state == .Hidden ? position : CGPoint(x: position.x + offset, y: position.y + offset)
+        let newPosition = state == .hidden ? position : CGPoint(x: position.x + offset, y: position.y + offset)
         triggerButton.frame = CGRect(origin: newPosition, size: triggerButton.frame.size)
         
         reloadButtons()
@@ -176,7 +176,7 @@ class RHSideButtons {
      */
     func hideTriggerButton() {
         hideButtons()
-        triggerButton.hidden = true
+        triggerButton.isHidden = true
     }
     
     /**
@@ -184,33 +184,33 @@ class RHSideButtons {
      */
     func showTriggerButton() {
         hideButtons()
-        triggerButton.hidden = false
+        triggerButton.isHidden = false
     }
     
     /**
      Method show with animation all side buttons
      */
     func showButtons() {
-        state = .Shown
+        state = .shown
     }
     
     /**
      Method hide with animation all side buttons
      */
     func hideButtons() {
-        state = .Hidden
+        state = .hidden
     }
 }
 
 extension RHSideButtons: RHButtonViewDelegate {
     
-    func didSelectButton(buttonView: RHButtonView) {
-        if let indexOfButton = buttonsArr.indexOf(buttonView) {
+    func didSelectButton(_ buttonView: RHButtonView) {
+        if let indexOfButton = buttonsArr.index(of: buttonView) {
             delegate?.sideButtons(self, didSelectButtonAtIndex: indexOfButton)
            
-            state = .Hidden
+            state = .hidden
         } else {
-            state = state == .Shown ? .Hidden : .Shown
+            state = state == .shown ? .hidden : .shown
             
             delegate?.sideButtons(self, didTriggerButtonChangeStateTo: state)
         }

@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var navigationController: UINavigationController!
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         navigationController = getPreparedNavigationController()
         window?.rootViewController = navigationController
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    private func getPreparedNavigationController() -> UINavigationController {
+    fileprivate func getPreparedNavigationController() -> UINavigationController {
         let mainViewController = MainViewController(nibName: nil, bundle: nil)
         
         // I would like to show you how this control looks like, so simple demo presenter class was needed

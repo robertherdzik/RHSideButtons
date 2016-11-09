@@ -10,20 +10,20 @@ import UIKit
 
 struct RHSideButtonAnimator {
     
-    let commonAnimationDuration = NSTimeInterval(0.4)
+    let commonAnimationDuration = TimeInterval(0.4)
     let commonSpringDumping = CGFloat(0.4)
     let commonInitSpringVelocity = CGFloat(0.1)
     
-    private func commonAnimation(delay: NSTimeInterval = 0, animations: () -> (), completition: ((Bool) -> ())? = nil) {
-        UIView.animateWithDuration(commonAnimationDuration, delay: delay, usingSpringWithDamping: commonSpringDumping, initialSpringVelocity: commonInitSpringVelocity, options: .CurveEaseOut, animations: animations, completion: completition)
+    fileprivate func commonAnimation(_ delay: TimeInterval = 0, animations: @escaping () -> (), completition: ((Bool) -> ())? = nil) {
+        UIView.animate(withDuration: commonAnimationDuration, delay: delay, usingSpringWithDamping: commonSpringDumping, initialSpringVelocity: commonInitSpringVelocity, options: .curveEaseOut, animations: animations, completion: completition)
     }
 }
 
 extension RHSideButtonAnimator: RHSideButtonAnimatorProtocol {
     
-    func animateTriggerButton(button: RHButtonView, state: RHButtonState, completition: (() -> ())?) {
-        let scale = state == .Hidden ? CGFloat(1) : CGFloat (0.7)
-        let trans = CGAffineTransformMakeScale(scale, scale)
+    func animateTriggerButton(_ button: RHButtonView, state: RHButtonState, completition: (() -> ())?) {
+        let scale = state == .hidden ? CGFloat(1) : CGFloat (0.7)
+        let trans = CGAffineTransform(scaleX: scale, y: scale)
         
         commonAnimation(animations: {
             button.transform = trans
@@ -32,9 +32,9 @@ extension RHSideButtonAnimator: RHSideButtonAnimatorProtocol {
         }
     }
     
-    func animateButtonsPositionX(buttonsArr: [RHButtonView], targetPos: CGPoint, completition: (() -> ())? = nil) {
+    func animateButtonsPositionX(_ buttonsArr: [RHButtonView], targetPos: CGPoint, completition: (() -> ())? = nil) {
         
-        var delay: NSTimeInterval = 0
+        var delay: TimeInterval = 0
         for button in buttonsArr {
             let completitionBlock = button.isEqual(buttonsArr.last) ? completition : nil
             
