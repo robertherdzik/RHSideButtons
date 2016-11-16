@@ -8,24 +8,24 @@
 
 import UIKit
 
-class RHTriggerButtonView: RHButtonView {
+public class RHTriggerButtonView: RHButtonView {
     
     fileprivate var notPressedImageHolder: UIImage?
     fileprivate var pressedImage: UIImage?
     
-    init(frame: CGRect, pressedImage: UIImage) {
+    public init(frame: CGRect, pressedImage: UIImage) {
         self.pressedImage = pressedImage
         
         super.init(frame: frame)
     }
     
-    convenience init(pressedImage: UIImage, builder: BuildCellBlock) {
+    convenience public init(pressedImage: UIImage, builder: BuildCellBlock) {
         self.init(frame: CGRect.zero, pressedImage: pressedImage)
         
         builder(self)
     }
     
-    convenience init(pressedImage: UIImage, builder: RHButtonViewConfigProtocol) {
+    convenience public init(pressedImage: UIImage, builder: RHButtonViewConfigProtocol) {
         self.init(frame: CGRect.zero, pressedImage: pressedImage)
         
         bgColor = builder.bgColor
@@ -33,7 +33,7 @@ class RHTriggerButtonView: RHButtonView {
         hasShadow = builder.hasShadow
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
