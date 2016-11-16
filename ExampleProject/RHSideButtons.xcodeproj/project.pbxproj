@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B186F63F1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */; };
+		E1109DF01CF4ACB000FD9EEE /* RHSideButtonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */; };
+		E1C1CDB41CF72B1F00B33D15 /* RHTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */; };
+		E1C1CDC11CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */; };
+		E1D4459C1CEF79ED003AF888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4459B1CEF79ED003AF888 /* AppDelegate.swift */; };
+		E1D445A31CEF79ED003AF888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D445A21CEF79ED003AF888 /* Assets.xcassets */; };
+		E1D445A61CEF79ED003AF888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D445A41CEF79ED003AF888 /* LaunchScreen.storyboard */; };
+		E1D445B11CEF79EE003AF888 /* RHSideButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445B01CEF79EE003AF888 /* RHSideButtonsTests.swift */; };
+		E1D445BD1CEF7BE0003AF888 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445BC1CEF7BE0003AF888 /* MainView.swift */; };
+		E1D445BF1CEF7BF8003AF888 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */; };
+		E1D445C21CEF7CF2003AF888 /* RHSideButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445C11CEF7CF2003AF888 /* RHSideButtons.swift */; };
+		E1D445CA1CF23569003AF888 /* RHButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445C81CF23569003AF888 /* RHButtonView.swift */; };
+		E1D445CB1CF23569003AF888 /* RHButtonViewConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445C91CF23569003AF888 /* RHButtonViewConfigProtocol.swift */; };
+		EC9EE9FF60FC905CC3584411 /* Pods_RHSideButtonsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C667E62B88195E0D673E8B62 /* Pods_RHSideButtonsTests.framework */; };
+		F8D888DADC623B7578D6114F /* Pods_RHSideButtons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6D54D9280E12452F7CD5BA /* Pods_RHSideButtons.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1D445AD1CEF79EE003AF888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D445901CEF79ED003AF888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D445971CEF79ED003AF888;
+			remoteInfo = RHSideButtons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44BF0B0CACA79661318B6C2D /* Pods-RHSideButtons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHSideButtons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHSideButtons/Pods-RHSideButtons.debug.xcconfig"; sourceTree = "<group>"; };
+		4E6D54D9280E12452F7CD5BA /* Pods_RHSideButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHSideButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65654F5512697A08C891B6CE /* Pods-RHSideButtons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHSideButtons.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHSideButtons/Pods-RHSideButtons.release.xcconfig"; sourceTree = "<group>"; };
+		6EF65DABB9811D9C6C8E999F /* Pods-RHSideButtonsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHSideButtonsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHSideButtonsTests/Pods-RHSideButtonsTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F96F0D6931E8559F900CBE0 /* Pods-RHSideButtonsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHSideButtonsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHSideButtonsTests/Pods-RHSideButtonsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsDemoPresenter.swift; sourceTree = "<group>"; };
+		C667E62B88195E0D673E8B62 /* Pods_RHSideButtonsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHSideButtonsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtonAnimator.swift; path = RHSideButtons/RHSideButtonAnimator.swift; sourceTree = "<group>"; };
+		E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHTriggerButtonView.swift; path = RHSideButtons/RHTriggerButtonView.swift; sourceTree = "<group>"; };
+		E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtonAnimatorProtocol.swift; path = RHSideButtons/RHSideButtonAnimatorProtocol.swift; sourceTree = "<group>"; };
+		E1D445981CEF79ED003AF888 /* RHSideButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHSideButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D4459B1CEF79ED003AF888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1D445A21CEF79ED003AF888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1D445A51CEF79ED003AF888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1D445A71CEF79ED003AF888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D445AC1CEF79EE003AF888 /* RHSideButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHSideButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D445B01CEF79EE003AF888 /* RHSideButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSideButtonsTests.swift; sourceTree = "<group>"; };
+		E1D445B21CEF79EE003AF888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D445BC1CEF7BE0003AF888 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = MainViewController/MainView.swift; sourceTree = "<group>"; };
+		E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainViewController/MainViewController.swift; sourceTree = "<group>"; };
+		E1D445C11CEF7CF2003AF888 /* RHSideButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtons.swift; path = RHSideButtons/RHSideButtons.swift; sourceTree = "<group>"; };
+		E1D445C81CF23569003AF888 /* RHButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHButtonView.swift; path = RHSideButtons/RHButtonView.swift; sourceTree = "<group>"; };
+		E1D445C91CF23569003AF888 /* RHButtonViewConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHButtonViewConfigProtocol.swift; path = RHSideButtons/RHButtonViewConfigProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1D445951CEF79ED003AF888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D888DADC623B7578D6114F /* Pods_RHSideButtons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D445A91CEF79EE003AF888 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9EE9FF60FC905CC3584411 /* Pods_RHSideButtonsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		359893613F3D55B297FBF20E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E6D54D9280E12452F7CD5BA /* Pods_RHSideButtons.framework */,
+				C667E62B88195E0D673E8B62 /* Pods_RHSideButtonsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E5837437E2002C9B924423 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44BF0B0CACA79661318B6C2D /* Pods-RHSideButtons.debug.xcconfig */,
+				65654F5512697A08C891B6CE /* Pods-RHSideButtons.release.xcconfig */,
+				8F96F0D6931E8559F900CBE0 /* Pods-RHSideButtonsTests.debug.xcconfig */,
+				6EF65DABB9811D9C6C8E999F /* Pods-RHSideButtonsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1D4458F1CEF79ED003AF888 = {
+			isa = PBXGroup;
+			children = (
+				E1D4459A1CEF79ED003AF888 /* RHSideButtons */,
+				E1D445AF1CEF79EE003AF888 /* RHSideButtonsTests */,
+				E1D445991CEF79ED003AF888 /* Products */,
+				83E5837437E2002C9B924423 /* Pods */,
+				359893613F3D55B297FBF20E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1D445991CEF79ED003AF888 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D445981CEF79ED003AF888 /* RHSideButtons.app */,
+				E1D445AC1CEF79EE003AF888 /* RHSideButtonsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1D4459A1CEF79ED003AF888 /* RHSideButtons */ = {
+			isa = PBXGroup;
+			children = (
+				E1D445C01CEF7CB1003AF888 /* RHSideButtons */,
+				E1D445BB1CEF7B86003AF888 /* MainViewController */,
+				E1D4459B1CEF79ED003AF888 /* AppDelegate.swift */,
+				E1D445A21CEF79ED003AF888 /* Assets.xcassets */,
+				E1D445A41CEF79ED003AF888 /* LaunchScreen.storyboard */,
+				E1D445A71CEF79ED003AF888 /* Info.plist */,
+			);
+			path = RHSideButtons;
+			sourceTree = "<group>";
+		};
+		E1D445AF1CEF79EE003AF888 /* RHSideButtonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D445B01CEF79EE003AF888 /* RHSideButtonsTests.swift */,
+				E1D445B21CEF79EE003AF888 /* Info.plist */,
+			);
+			path = RHSideButtonsTests;
+			sourceTree = "<group>";
+		};
+		E1D445BB1CEF7B86003AF888 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */,
+				E1D445BC1CEF7BE0003AF888 /* MainView.swift */,
+				B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		E1D445C01CEF7CB1003AF888 /* RHSideButtons */ = {
+			isa = PBXGroup;
+			children = (
+				E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */,
+				E1D445C11CEF7CF2003AF888 /* RHSideButtons.swift */,
+				E1D445C81CF23569003AF888 /* RHButtonView.swift */,
+				E1D445C91CF23569003AF888 /* RHButtonViewConfigProtocol.swift */,
+				E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */,
+				E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */,
+			);
+			name = RHSideButtons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1D445971CEF79ED003AF888 /* RHSideButtons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D445B51CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtons" */;
+			buildPhases = (
+				424E8246276C5082869E6D62 /* [CP] Check Pods Manifest.lock */,
+				E1D445941CEF79ED003AF888 /* Sources */,
+				E1D445951CEF79ED003AF888 /* Frameworks */,
+				E1D445961CEF79ED003AF888 /* Resources */,
+				2C6A9AFD27124CA3C69D65EA /* [CP] Embed Pods Frameworks */,
+				F98CFE76DCE677A5D2B55CB9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHSideButtons;
+			productName = RHSideButtons;
+			productReference = E1D445981CEF79ED003AF888 /* RHSideButtons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1D445AB1CEF79EE003AF888 /* RHSideButtonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D445B81CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtonsTests" */;
+			buildPhases = (
+				2701B08ABACA92D4F6A40788 /* [CP] Check Pods Manifest.lock */,
+				E1D445A81CEF79EE003AF888 /* Sources */,
+				E1D445A91CEF79EE003AF888 /* Frameworks */,
+				E1D445AA1CEF79EE003AF888 /* Resources */,
+				E4C0DD574CC267C5172AA891 /* [CP] Embed Pods Frameworks */,
+				5E1B9C58C693C40C66A43184 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D445AE1CEF79EE003AF888 /* PBXTargetDependency */,
+			);
+			name = RHSideButtonsTests;
+			productName = RHSideButtonsTests;
+			productReference = E1D445AC1CEF79EE003AF888 /* RHSideButtonsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1D445901CEF79ED003AF888 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Robert Herdzik";
+				TargetAttributes = {
+					E1D445971CEF79ED003AF888 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
+					};
+					E1D445AB1CEF79EE003AF888 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
+						TestTargetID = E1D445971CEF79ED003AF888;
+					};
+				};
+			};
+			buildConfigurationList = E1D445931CEF79ED003AF888 /* Build configuration list for PBXProject "RHSideButtons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1D4458F1CEF79ED003AF888;
+			productRefGroup = E1D445991CEF79ED003AF888 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1D445971CEF79ED003AF888 /* RHSideButtons */,
+				E1D445AB1CEF79EE003AF888 /* RHSideButtonsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1D445961CEF79ED003AF888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D445A61CEF79ED003AF888 /* LaunchScreen.storyboard in Resources */,
+				E1D445A31CEF79ED003AF888 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D445AA1CEF79EE003AF888 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2701B08ABACA92D4F6A40788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C6A9AFD27124CA3C69D65EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHSideButtons/Pods-RHSideButtons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		424E8246276C5082869E6D62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E1B9C58C693C40C66A43184 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHSideButtonsTests/Pods-RHSideButtonsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C0DD574CC267C5172AA891 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHSideButtonsTests/Pods-RHSideButtonsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F98CFE76DCE677A5D2B55CB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RHSideButtons/Pods-RHSideButtons-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1D445941CEF79ED003AF888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D445CB1CF23569003AF888 /* RHButtonViewConfigProtocol.swift in Sources */,
+				E1C1CDC11CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift in Sources */,
+				E1D445BF1CEF7BF8003AF888 /* MainViewController.swift in Sources */,
+				E1109DF01CF4ACB000FD9EEE /* RHSideButtonAnimator.swift in Sources */,
+				E1D445BD1CEF7BE0003AF888 /* MainView.swift in Sources */,
+				B186F63F1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift in Sources */,
+				E1D4459C1CEF79ED003AF888 /* AppDelegate.swift in Sources */,
+				E1C1CDB41CF72B1F00B33D15 /* RHTriggerButtonView.swift in Sources */,
+				E1D445C21CEF7CF2003AF888 /* RHSideButtons.swift in Sources */,
+				E1D445CA1CF23569003AF888 /* RHButtonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D445A81CEF79EE003AF888 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D445B11CEF79EE003AF888 /* RHSideButtonsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1D445AE1CEF79EE003AF888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D445971CEF79ED003AF888 /* RHSideButtons */;
+			targetProxy = E1D445AD1CEF79EE003AF888 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1D445A41CEF79ED003AF888 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D445A51CEF79ED003AF888 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1D445B31CEF79EE003AF888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1D445B41CEF79EE003AF888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1D445B61CEF79EE003AF888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BF0B0CACA79661318B6C2D /* Pods-RHSideButtons.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RHSideButtons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E1D445B71CEF79EE003AF888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65654F5512697A08C891B6CE /* Pods-RHSideButtons.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RHSideButtons/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtons;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E1D445B91CEF79EE003AF888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F96F0D6931E8559F900CBE0 /* Pods-RHSideButtonsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RHSideButtonsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHSideButtons.app/RHSideButtons";
+			};
+			name = Debug;
+		};
+		E1D445BA1CEF79EE003AF888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF65DABB9811D9C6C8E999F /* Pods-RHSideButtonsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RHSideButtonsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtonsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHSideButtons.app/RHSideButtons";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1D445931CEF79ED003AF888 /* Build configuration list for PBXProject "RHSideButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D445B31CEF79EE003AF888 /* Debug */,
+				E1D445B41CEF79EE003AF888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D445B51CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D445B61CEF79EE003AF888 /* Debug */,
+				E1D445B71CEF79EE003AF888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D445B81CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D445B91CEF79EE003AF888 /* Debug */,
+				E1D445BA1CEF79EE003AF888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1D445901CEF79ED003AF888 /* Project object */;
+}

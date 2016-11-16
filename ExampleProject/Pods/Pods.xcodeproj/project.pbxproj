@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035C673710A3ABC8791C547A8EFAB36C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3BF303A8661F9083E598119A11F6EF33 /* Pods-RHSideButtonsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D323156F04FBEF329E74D4CD1EC158 /* Pods-RHSideButtonsTests-dummy.m */; };
+		50D7B53A787C688FF6C5C3D22266DF25 /* Pods-RHSideButtons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF570705929D6408E993B143E4968D41 /* Pods-RHSideButtons-dummy.m */; };
+		6B227B37BC37267647AD2FF3AA8C1323 /* Pods-RHSideButtons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65BEC8401AA760F362EA56E4D72F0F93 /* Pods-RHSideButtons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DBC987CEFD1A870B1C76144A5F3E476 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E4ECD9D2AC716DE003CEFD2D302EA7B2 /* Pods-RHSideButtonsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F1C131D4E2C63E67317F23BA6CC816 /* Pods-RHSideButtonsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FA429CF6F1E9D63E7299B14BC4977C5 /* Pods-RHSideButtons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHSideButtons.release.xcconfig"; sourceTree = "<group>"; };
+		262103FBE71AA7228BA747501363DB53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29D323156F04FBEF329E74D4CD1EC158 /* Pods-RHSideButtonsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RHSideButtonsTests-dummy.m"; sourceTree = "<group>"; };
+		52CF1BA083A4A0352163C6ECA856956F /* Pods-RHSideButtonsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RHSideButtonsTests.modulemap"; sourceTree = "<group>"; };
+		57EA5B6BDCA9309E5C133920A1421E42 /* Pods-RHSideButtons-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RHSideButtons-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B26CD6B77D232C5661C23CB8973D5BD /* Pods-RHSideButtons-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHSideButtons-frameworks.sh"; sourceTree = "<group>"; };
+		611C137CD7833872B1D7ECEECEB80289 /* Pods-RHSideButtonsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RHSideButtonsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		623436673A9C515D24BA11BE710AAB09 /* Pods_RHSideButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RHSideButtons.framework; path = "Pods-RHSideButtons.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6509A72D5B9770D8D59E5BDF97E9F411 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BEC8401AA760F362EA56E4D72F0F93 /* Pods-RHSideButtons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RHSideButtons-umbrella.h"; sourceTree = "<group>"; };
+		7D89DFF807E9B128C7B974BA32FC3BB2 /* Pods-RHSideButtonsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHSideButtonsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81D3707654F2D3F5B885F78DC9B397F8 /* Pods_RHSideButtonsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RHSideButtonsTests.framework; path = "Pods-RHSideButtonsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B57BF790043729B38C52CABBE4B99E2 /* Pods-RHSideButtonsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RHSideButtonsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		928F24148803997BD105588290CA19BA /* Pods-RHSideButtonsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHSideButtonsTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9946D55B41890B694F6D3707D8A42B98 /* Pods-RHSideButtons-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHSideButtons-resources.sh"; sourceTree = "<group>"; };
+		AF570705929D6408E993B143E4968D41 /* Pods-RHSideButtons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RHSideButtons-dummy.m"; sourceTree = "<group>"; };
+		C4D06F0637C6AB003C71C36B969C360C /* Pods-RHSideButtonsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHSideButtonsTests-resources.sh"; sourceTree = "<group>"; };
+		C5F1C131D4E2C63E67317F23BA6CC816 /* Pods-RHSideButtonsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RHSideButtonsTests-umbrella.h"; sourceTree = "<group>"; };
+		CA2738E15D5969521A6548A24331A041 /* Pods-RHSideButtons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RHSideButtons.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0A6CDE335E387A1971B13EC7BE31B45 /* Pods-RHSideButtonsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RHSideButtonsTests-frameworks.sh"; sourceTree = "<group>"; };
+		DC912F97F3D36FFEBB65D0A56AD0C900 /* Pods-RHSideButtons-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RHSideButtons-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FEBB5FB2FCB747FB32F5B7CD2FE118F7 /* Pods-RHSideButtons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RHSideButtons.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A00D53D420698F4647C35F73DAB8330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBC987CEFD1A870B1C76144A5F3E476 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6F98921D5CB2ACF880A5D845996C81D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035C673710A3ABC8791C547A8EFAB36C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B0C9D371109601295B380CDFB619D8A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE04892B6FA15142AC098D6714702A /* Pods-RHSideButtons */,
+				6D056E965A4FEE474B5C7DE7A8C863E3 /* Pods-RHSideButtonsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4DAE04892B6FA15142AC098D6714702A /* Pods-RHSideButtons */ = {
+			isa = PBXGroup;
+			children = (
+				262103FBE71AA7228BA747501363DB53 /* Info.plist */,
+				FEBB5FB2FCB747FB32F5B7CD2FE118F7 /* Pods-RHSideButtons.modulemap */,
+				DC912F97F3D36FFEBB65D0A56AD0C900 /* Pods-RHSideButtons-acknowledgements.markdown */,
+				57EA5B6BDCA9309E5C133920A1421E42 /* Pods-RHSideButtons-acknowledgements.plist */,
+				AF570705929D6408E993B143E4968D41 /* Pods-RHSideButtons-dummy.m */,
+				5B26CD6B77D232C5661C23CB8973D5BD /* Pods-RHSideButtons-frameworks.sh */,
+				9946D55B41890B694F6D3707D8A42B98 /* Pods-RHSideButtons-resources.sh */,
+				65BEC8401AA760F362EA56E4D72F0F93 /* Pods-RHSideButtons-umbrella.h */,
+				CA2738E15D5969521A6548A24331A041 /* Pods-RHSideButtons.debug.xcconfig */,
+				0FA429CF6F1E9D63E7299B14BC4977C5 /* Pods-RHSideButtons.release.xcconfig */,
+			);
+			name = "Pods-RHSideButtons";
+			path = "Target Support Files/Pods-RHSideButtons";
+			sourceTree = "<group>";
+		};
+		6D056E965A4FEE474B5C7DE7A8C863E3 /* Pods-RHSideButtonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6509A72D5B9770D8D59E5BDF97E9F411 /* Info.plist */,
+				52CF1BA083A4A0352163C6ECA856956F /* Pods-RHSideButtonsTests.modulemap */,
+				611C137CD7833872B1D7ECEECEB80289 /* Pods-RHSideButtonsTests-acknowledgements.markdown */,
+				8B57BF790043729B38C52CABBE4B99E2 /* Pods-RHSideButtonsTests-acknowledgements.plist */,
+				29D323156F04FBEF329E74D4CD1EC158 /* Pods-RHSideButtonsTests-dummy.m */,
+				D0A6CDE335E387A1971B13EC7BE31B45 /* Pods-RHSideButtonsTests-frameworks.sh */,
+				C4D06F0637C6AB003C71C36B969C360C /* Pods-RHSideButtonsTests-resources.sh */,
+				C5F1C131D4E2C63E67317F23BA6CC816 /* Pods-RHSideButtonsTests-umbrella.h */,
+				7D89DFF807E9B128C7B974BA32FC3BB2 /* Pods-RHSideButtonsTests.debug.xcconfig */,
+				928F24148803997BD105588290CA19BA /* Pods-RHSideButtonsTests.release.xcconfig */,
+			);
+			name = "Pods-RHSideButtonsTests";
+			path = "Target Support Files/Pods-RHSideButtonsTests";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AABFD4E96301AFF396793643489B36E5 /* Products */,
+				1B0C9D371109601295B380CDFB619D8A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AABFD4E96301AFF396793643489B36E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623436673A9C515D24BA11BE710AAB09 /* Pods_RHSideButtons.framework */,
+				81D3707654F2D3F5B885F78DC9B397F8 /* Pods_RHSideButtonsTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2EA57DEA0AA99B54B724B718DA1960DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B227B37BC37267647AD2FF3AA8C1323 /* Pods-RHSideButtons-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924E46262878577F35CC8185807DB49C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4ECD9D2AC716DE003CEFD2D302EA7B2 /* Pods-RHSideButtonsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0588976F3BFB8E60D3B834A437C76868 /* Pods-RHSideButtons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B87F7C3FD42E9978244C12BC3503BEB4 /* Build configuration list for PBXNativeTarget "Pods-RHSideButtons" */;
+			buildPhases = (
+				046D154EF8F9FAA0A06B318E597AC19D /* Sources */,
+				D6F98921D5CB2ACF880A5D845996C81D /* Frameworks */,
+				2EA57DEA0AA99B54B724B718DA1960DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RHSideButtons";
+			productName = "Pods-RHSideButtons";
+			productReference = 623436673A9C515D24BA11BE710AAB09 /* Pods_RHSideButtons.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		801DCE7361DB61B50D22E191C0DCE592 /* Pods-RHSideButtonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4122B153EA1C5B3FB9D3D1AB135F36 /* Build configuration list for PBXNativeTarget "Pods-RHSideButtonsTests" */;
+			buildPhases = (
+				FCBAA0BDA2E5C7EA395E72871408E3D3 /* Sources */,
+				0A00D53D420698F4647C35F73DAB8330 /* Frameworks */,
+				924E46262878577F35CC8185807DB49C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RHSideButtonsTests";
+			productName = "Pods-RHSideButtonsTests";
+			productReference = 81D3707654F2D3F5B885F78DC9B397F8 /* Pods_RHSideButtonsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AABFD4E96301AFF396793643489B36E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0588976F3BFB8E60D3B834A437C76868 /* Pods-RHSideButtons */,
+				801DCE7361DB61B50D22E191C0DCE592 /* Pods-RHSideButtonsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046D154EF8F9FAA0A06B318E597AC19D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D7B53A787C688FF6C5C3D22266DF25 /* Pods-RHSideButtons-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBAA0BDA2E5C7EA395E72871408E3D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF303A8661F9083E598119A11F6EF33 /* Pods-RHSideButtonsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		174BA96EC3A354340569C39F44AA2069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928F24148803997BD105588290CA19BA /* Pods-RHSideButtonsTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RHSideButtonsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RHSideButtonsTests/Pods-RHSideButtonsTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RHSideButtonsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C822FC40655AED758DB167B47F21D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D89DFF807E9B128C7B974BA32FC3BB2 /* Pods-RHSideButtonsTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RHSideButtonsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RHSideButtonsTests/Pods-RHSideButtonsTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RHSideButtonsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD1A777189AF199A94F80887F4CC370D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FA429CF6F1E9D63E7299B14BC4977C5 /* Pods-RHSideButtons.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RHSideButtons/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RHSideButtons/Pods-RHSideButtons.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RHSideButtons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F018B88541943CEE1495D992A9E98DF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2738E15D5969521A6548A24331A041 /* Pods-RHSideButtons.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RHSideButtons/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RHSideButtons/Pods-RHSideButtons.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RHSideButtons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A4122B153EA1C5B3FB9D3D1AB135F36 /* Build configuration list for PBXNativeTarget "Pods-RHSideButtonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C822FC40655AED758DB167B47F21D88 /* Debug */,
+				174BA96EC3A354340569C39F44AA2069 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */,
+				862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B87F7C3FD42E9978244C12BC3503BEB4 /* Build configuration list for PBXNativeTarget "Pods-RHSideButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F018B88541943CEE1495D992A9E98DF0 /* Debug */,
+				CD1A777189AF199A94F80887F4CC370D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
