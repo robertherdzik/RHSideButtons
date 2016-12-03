@@ -2,11 +2,23 @@
 <img src ="./ReadmeAssets/RHSideButtonsHeadLogo.png" width="800" height="300"/>
 </p>
 
+[![Version](https://img.shields.io/cocoapods/v/RHSideButtons.svg?style=flat)](http://cocoadocs.org/docsets/RHSideButtons)
+[![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
+
 # RHSideButtons 🌶
 Library provides easy to implement variation of Android (Material Design) Floating Action Button for iOS. You can use it as your app small side menu. 🌶
 
 ## Play with it 😎
 <iframe src="https://appetize.io/embed/zanve819jr7g7dmh326a924pq4?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
+
+## Installation
+You can install RHSideButtons library using Cocoapods:
+```
+pod 'RHSideButtons'
+```
+or you can simply copy ```RHSideButtons``` folder to your project.
 
 ## Usage
 You just need implement `RHSideButtonsDataSource` and `RHSideButtonsDelegate` similar to well-known UIKit design.
