@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol RHButtonViewConfigProtocol: class {
+public protocol RHButtonViewConfigProtocol: class {
     var bgColor: UIColor { get set }
     var image: UIImage? { get set }
     var hasShadow: Bool { get set }

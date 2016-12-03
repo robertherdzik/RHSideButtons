@@ -8,26 +8,26 @@
 
 import UIKit
 
-protocol RHSideButtonsDelegate: class {
+public protocol RHSideButtonsDelegate: class {
     func sideButtons(_ sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
     func sideButtons(_ sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 }
 
-protocol RHSideButtonsDataSource: class {
+public protocol RHSideButtonsDataSource: class {
     func sideButtonsNumberOfButtons(_ sideButtons: RHSideButtons) -> Int
     func sideButtons(_ sideButtons: RHSideButtons, buttonAtIndex index: Int) -> RHButtonView
 }
 
-enum RHButtonState: Int {
+public enum RHButtonState: Int {
     case hidden = 0
     case shown
 }
 
-class RHSideButtons {
+public class RHSideButtons {
     
-    weak var parentView: UIView?
-    weak var delegate: RHSideButtonsDelegate?
-    weak var dataSource: RHSideButtonsDataSource?
+    public weak var parentView: UIView?
+    public weak var delegate: RHSideButtonsDelegate?
+    public weak var dataSource: RHSideButtonsDataSource?
 
     fileprivate let buttonSize = CGSize(width: 55, height: 55)
     fileprivate let verticalSpacing = CGFloat(15)
@@ -58,9 +58,9 @@ class RHSideButtons {
         }
     }
     
-    var triggerButton: RHTriggerButtonView!
+    public var triggerButton: RHTriggerButtonView!
     
-    init(parentView: UIView, triggerButton: RHTriggerButtonView, buttonsAnimator: RHSideButtonAnimatorProtocol) {
+    public init(parentView: UIView, triggerButton: RHTriggerButtonView, buttonsAnimator: RHSideButtonAnimatorProtocol) {
         self.parentView = parentView
         self.triggerButton = triggerButton
         self.buttonsAnimator = buttonsAnimator
@@ -68,7 +68,7 @@ class RHSideButtons {
         setup()
     }
     
-    convenience init(parentView: UIView, triggerButton: RHTriggerButtonView) {
+    convenience public init(parentView: UIView, triggerButton: RHTriggerButtonView) {
         // At this moment "RHSideButtonAnimator" is only existing and default button animator
         self.init(parentView: parentView, triggerButton: triggerButton, buttonsAnimator: RHSideButtonAnimator())
     }
@@ -151,7 +151,7 @@ class RHSideButtons {
     /**
      Method reload whole buttons. Use this method right after you made some changes in Side Buttons model.
      */
-    func reloadButtons() {
+    public func reloadButtons() {
         removeButtons()
         addButtons()
         layoutButtons()
@@ -162,7 +162,7 @@ class RHSideButtons {
      
      - parameter position: position of right button, have in mind that if you set position of trigger button you need to substract/add his width or height (it depends on position in view axis)
      */
-    func setTriggerButtonPosition(_ position: CGPoint) {
+    public func setTriggerButtonPosition(_ position: CGPoint) {
         let scale = state == .hidden ? CGFloat(1) : CGFloat (0.5)
         let offset = triggerButton.frame.size.width/2 * scale
         let newPosition = state == .hidden ? position : CGPoint(x: position.x + offset, y: position.y + offset)
@@ -174,7 +174,7 @@ class RHSideButtons {
     /**
      If you want to hide trigger button in some point of lifecycle of your VC you can using this method
      */
-    func hideTriggerButton() {
+    public func hideTriggerButton() {
         hideButtons()
         triggerButton.isHidden = true
     }
@@ -182,7 +182,7 @@ class RHSideButtons {
     /**
      Method shows trigger button (if was hidden before)
      */
-    func showTriggerButton() {
+    public func showTriggerButton() {
         hideButtons()
         triggerButton.isHidden = false
     }
@@ -190,21 +190,21 @@ class RHSideButtons {
     /**
      Method show with animation all side buttons
      */
-    func showButtons() {
+    public func showButtons() {
         state = .shown
     }
     
     /**
      Method hide with animation all side buttons
      */
-    func hideButtons() {
+    public func hideButtons() {
         state = .hidden
     }
 }
 
 extension RHSideButtons: RHButtonViewDelegate {
     
-    func didSelectButton(_ buttonView: RHButtonView) {
+    public func didSelectButton(_ buttonView: RHButtonView) {
         if let indexOfButton = buttonsArr.index(of: buttonView) {
             delegate?.sideButtons(self, didSelectButtonAtIndex: indexOfButton)
            

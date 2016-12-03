@@ -7,60 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B186F63F1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */; };
-		E1109DF01CF4ACB000FD9EEE /* RHSideButtonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */; };
-		E1C1CDB41CF72B1F00B33D15 /* RHTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */; };
-		E1C1CDC11CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */; };
-		E1D4459C1CEF79ED003AF888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4459B1CEF79ED003AF888 /* AppDelegate.swift */; };
-		E1D445A31CEF79ED003AF888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D445A21CEF79ED003AF888 /* Assets.xcassets */; };
-		E1D445A61CEF79ED003AF888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D445A41CEF79ED003AF888 /* LaunchScreen.storyboard */; };
-		E1D445B11CEF79EE003AF888 /* RHSideButtonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445B01CEF79EE003AF888 /* RHSideButtonsTests.swift */; };
-		E1D445BD1CEF7BE0003AF888 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445BC1CEF7BE0003AF888 /* MainView.swift */; };
-		E1D445BF1CEF7BF8003AF888 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */; };
-		E1D445C21CEF7CF2003AF888 /* RHSideButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445C11CEF7CF2003AF888 /* RHSideButtons.swift */; };
-		E1D445CA1CF23569003AF888 /* RHButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445C81CF23569003AF888 /* RHButtonView.swift */; };
-		E1D445CB1CF23569003AF888 /* RHButtonViewConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D445C91CF23569003AF888 /* RHButtonViewConfigProtocol.swift */; };
+		B1579AAF1DF34F92000EB296 /* RHSideButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = B1579AAD1DF34F92000EB296 /* RHSideButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1579ABC1DF34FCA000EB296 /* RHButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579AB61DF34FCA000EB296 /* RHButtonView.swift */; };
+		B1579ABD1DF34FCA000EB296 /* RHButtonViewConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579AB71DF34FCA000EB296 /* RHButtonViewConfigProtocol.swift */; };
+		B1579ABE1DF34FCA000EB296 /* RHSideButtonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579AB81DF34FCA000EB296 /* RHSideButtonAnimator.swift */; };
+		B1579ABF1DF34FCA000EB296 /* RHSideButtonAnimatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579AB91DF34FCA000EB296 /* RHSideButtonAnimatorProtocol.swift */; };
+		B1579AC01DF34FCA000EB296 /* RHSideButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579ABA1DF34FCA000EB296 /* RHSideButtons.swift */; };
+		B1579AC11DF34FCA000EB296 /* RHTriggerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1579ABB1DF34FCA000EB296 /* RHTriggerButtonView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		E1D445AD1CEF79EE003AF888 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E1D445901CEF79ED003AF888 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E1D445971CEF79ED003AF888;
-			remoteInfo = RHSideButtons;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsDemoPresenter.swift; sourceTree = "<group>"; };
-		E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtonAnimator.swift; path = RHSideButtons/RHSideButtonAnimator.swift; sourceTree = "<group>"; };
-		E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHTriggerButtonView.swift; path = RHSideButtons/RHTriggerButtonView.swift; sourceTree = "<group>"; };
-		E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtonAnimatorProtocol.swift; path = RHSideButtons/RHSideButtonAnimatorProtocol.swift; sourceTree = "<group>"; };
-		E1D445981CEF79ED003AF888 /* RHSideButtons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHSideButtons.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D4459B1CEF79ED003AF888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1D445A21CEF79ED003AF888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E1D445A51CEF79ED003AF888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E1D445A71CEF79ED003AF888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1D445AC1CEF79EE003AF888 /* RHSideButtonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHSideButtonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D445B01CEF79EE003AF888 /* RHSideButtonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHSideButtonsTests.swift; sourceTree = "<group>"; };
-		E1D445B21CEF79EE003AF888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1D445BC1CEF7BE0003AF888 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = MainViewController/MainView.swift; sourceTree = "<group>"; };
-		E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainViewController/MainViewController.swift; sourceTree = "<group>"; };
-		E1D445C11CEF7CF2003AF888 /* RHSideButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHSideButtons.swift; path = RHSideButtons/RHSideButtons.swift; sourceTree = "<group>"; };
-		E1D445C81CF23569003AF888 /* RHButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHButtonView.swift; path = RHSideButtons/RHButtonView.swift; sourceTree = "<group>"; };
-		E1D445C91CF23569003AF888 /* RHButtonViewConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RHButtonViewConfigProtocol.swift; path = RHSideButtons/RHButtonViewConfigProtocol.swift; sourceTree = "<group>"; };
+		B1579AAA1DF34F92000EB296 /* RHSideButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RHSideButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1579AAD1DF34F92000EB296 /* RHSideButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHSideButtons.h; sourceTree = "<group>"; };
+		B1579AAE1DF34F92000EB296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1579AB61DF34FCA000EB296 /* RHButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHButtonView.swift; sourceTree = "<group>"; };
+		B1579AB71DF34FCA000EB296 /* RHButtonViewConfigProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHButtonViewConfigProtocol.swift; sourceTree = "<group>"; };
+		B1579AB81DF34FCA000EB296 /* RHSideButtonAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSideButtonAnimator.swift; sourceTree = "<group>"; };
+		B1579AB91DF34FCA000EB296 /* RHSideButtonAnimatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSideButtonAnimatorProtocol.swift; sourceTree = "<group>"; };
+		B1579ABA1DF34FCA000EB296 /* RHSideButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHSideButtons.swift; sourceTree = "<group>"; };
+		B1579ABB1DF34FCA000EB296 /* RHTriggerButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHTriggerButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E1D445951CEF79ED003AF888 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1D445A91CEF79EE003AF888 /* Frameworks */ = {
+		B1579AA61DF34F92000EB296 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -70,79 +39,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E1D4458F1CEF79ED003AF888 = {
+		B1579AA01DF34F92000EB296 = {
 			isa = PBXGroup;
 			children = (
-				E1D4459A1CEF79ED003AF888 /* RHSideButtons */,
-				E1D445AF1CEF79EE003AF888 /* RHSideButtonsTests */,
-				E1D445991CEF79ED003AF888 /* Products */,
+				B1579AAC1DF34F92000EB296 /* RHSideButtons */,
+				B1579AAB1DF34F92000EB296 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E1D445991CEF79ED003AF888 /* Products */ = {
+		B1579AAB1DF34F92000EB296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1D445981CEF79ED003AF888 /* RHSideButtons.app */,
-				E1D445AC1CEF79EE003AF888 /* RHSideButtonsTests.xctest */,
+				B1579AAA1DF34F92000EB296 /* RHSideButtons.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1D4459A1CEF79ED003AF888 /* RHSideButtons */ = {
+		B1579AAC1DF34F92000EB296 /* RHSideButtons */ = {
 			isa = PBXGroup;
 			children = (
-				E1D445C01CEF7CB1003AF888 /* RHSideButtons */,
-				E1D445BB1CEF7B86003AF888 /* MainViewController */,
-				E1D4459B1CEF79ED003AF888 /* AppDelegate.swift */,
-				E1D445A21CEF79ED003AF888 /* Assets.xcassets */,
-				E1D445A41CEF79ED003AF888 /* LaunchScreen.storyboard */,
-				E1D445A71CEF79ED003AF888 /* Info.plist */,
+				B1579AB51DF34FCA000EB296 /* RHSideButtons */,
+				B1579AAD1DF34F92000EB296 /* RHSideButtons.h */,
+				B1579AAE1DF34F92000EB296 /* Info.plist */,
 			);
 			path = RHSideButtons;
 			sourceTree = "<group>";
 		};
-		E1D445AF1CEF79EE003AF888 /* RHSideButtonsTests */ = {
+		B1579AB51DF34FCA000EB296 /* RHSideButtons */ = {
 			isa = PBXGroup;
 			children = (
-				E1D445B01CEF79EE003AF888 /* RHSideButtonsTests.swift */,
-				E1D445B21CEF79EE003AF888 /* Info.plist */,
+				B1579AB61DF34FCA000EB296 /* RHButtonView.swift */,
+				B1579AB71DF34FCA000EB296 /* RHButtonViewConfigProtocol.swift */,
+				B1579AB81DF34FCA000EB296 /* RHSideButtonAnimator.swift */,
+				B1579AB91DF34FCA000EB296 /* RHSideButtonAnimatorProtocol.swift */,
+				B1579ABA1DF34FCA000EB296 /* RHSideButtons.swift */,
+				B1579ABB1DF34FCA000EB296 /* RHTriggerButtonView.swift */,
 			);
-			path = RHSideButtonsTests;
-			sourceTree = "<group>";
-		};
-		E1D445BB1CEF7B86003AF888 /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E1D445BE1CEF7BF8003AF888 /* MainViewController.swift */,
-				E1D445BC1CEF7BE0003AF888 /* MainView.swift */,
-				B186F63E1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift */,
-			);
-			name = MainViewController;
-			sourceTree = "<group>";
-		};
-		E1D445C01CEF7CB1003AF888 /* RHSideButtons */ = {
-			isa = PBXGroup;
-			children = (
-				E1C1CDC01CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift */,
-				E1D445C11CEF7CF2003AF888 /* RHSideButtons.swift */,
-				E1D445C81CF23569003AF888 /* RHButtonView.swift */,
-				E1D445C91CF23569003AF888 /* RHButtonViewConfigProtocol.swift */,
-				E1109DEF1CF4ACB000FD9EEE /* RHSideButtonAnimator.swift */,
-				E1C1CDB31CF72B1F00B33D15 /* RHTriggerButtonView.swift */,
-			);
-			name = RHSideButtons;
+			path = RHSideButtons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B1579AA71DF34F92000EB296 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1579AAF1DF34F92000EB296 /* RHSideButtons.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		E1D445971CEF79ED003AF888 /* RHSideButtons */ = {
+		B1579AA91DF34F92000EB296 /* RHSideButtons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1D445B51CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtons" */;
+			buildConfigurationList = B1579AB21DF34F92000EB296 /* Build configuration list for PBXNativeTarget "RHSideButtons" */;
 			buildPhases = (
-				E1D445941CEF79ED003AF888 /* Sources */,
-				E1D445951CEF79ED003AF888 /* Frameworks */,
-				E1D445961CEF79ED003AF888 /* Resources */,
+				B1579AA51DF34F92000EB296 /* Sources */,
+				B1579AA61DF34F92000EB296 /* Frameworks */,
+				B1579AA71DF34F92000EB296 /* Headers */,
+				B1579AA81DF34F92000EB296 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -150,78 +107,43 @@
 			);
 			name = RHSideButtons;
 			productName = RHSideButtons;
-			productReference = E1D445981CEF79ED003AF888 /* RHSideButtons.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E1D445AB1CEF79EE003AF888 /* RHSideButtonsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E1D445B81CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtonsTests" */;
-			buildPhases = (
-				E1D445A81CEF79EE003AF888 /* Sources */,
-				E1D445A91CEF79EE003AF888 /* Frameworks */,
-				E1D445AA1CEF79EE003AF888 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E1D445AE1CEF79EE003AF888 /* PBXTargetDependency */,
-			);
-			name = RHSideButtonsTests;
-			productName = RHSideButtonsTests;
-			productReference = E1D445AC1CEF79EE003AF888 /* RHSideButtonsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = B1579AAA1DF34F92000EB296 /* RHSideButtons.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E1D445901CEF79ED003AF888 /* Project object */ = {
+		B1579AA11DF34F92000EB296 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Robert Herdzik";
 				TargetAttributes = {
-					E1D445971CEF79ED003AF888 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0810;
-					};
-					E1D445AB1CEF79EE003AF888 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0810;
-						TestTargetID = E1D445971CEF79ED003AF888;
+					B1579AA91DF34F92000EB296 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = E1D445931CEF79ED003AF888 /* Build configuration list for PBXProject "RHSideButtons" */;
+			buildConfigurationList = B1579AA41DF34F92000EB296 /* Build configuration list for PBXProject "RHSideButtons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = E1D4458F1CEF79ED003AF888;
-			productRefGroup = E1D445991CEF79ED003AF888 /* Products */;
+			mainGroup = B1579AA01DF34F92000EB296;
+			productRefGroup = B1579AAB1DF34F92000EB296 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1D445971CEF79ED003AF888 /* RHSideButtons */,
-				E1D445AB1CEF79EE003AF888 /* RHSideButtonsTests */,
+				B1579AA91DF34F92000EB296 /* RHSideButtons */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E1D445961CEF79ED003AF888 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1D445A61CEF79ED003AF888 /* LaunchScreen.storyboard in Resources */,
-				E1D445A31CEF79ED003AF888 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1D445AA1CEF79EE003AF888 /* Resources */ = {
+		B1579AA81DF34F92000EB296 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,54 +153,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E1D445941CEF79ED003AF888 /* Sources */ = {
+		B1579AA51DF34F92000EB296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D445CB1CF23569003AF888 /* RHButtonViewConfigProtocol.swift in Sources */,
-				E1C1CDC11CF7300B00B33D15 /* RHSideButtonAnimatorProtocol.swift in Sources */,
-				E1D445BF1CEF7BF8003AF888 /* MainViewController.swift in Sources */,
-				E1109DF01CF4ACB000FD9EEE /* RHSideButtonAnimator.swift in Sources */,
-				E1D445BD1CEF7BE0003AF888 /* MainView.swift in Sources */,
-				B186F63F1D3B6FED000DDD94 /* ButtonsDemoPresenter.swift in Sources */,
-				E1D4459C1CEF79ED003AF888 /* AppDelegate.swift in Sources */,
-				E1C1CDB41CF72B1F00B33D15 /* RHTriggerButtonView.swift in Sources */,
-				E1D445C21CEF7CF2003AF888 /* RHSideButtons.swift in Sources */,
-				E1D445CA1CF23569003AF888 /* RHButtonView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1D445A81CEF79EE003AF888 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1D445B11CEF79EE003AF888 /* RHSideButtonsTests.swift in Sources */,
+				B1579ABE1DF34FCA000EB296 /* RHSideButtonAnimator.swift in Sources */,
+				B1579ABF1DF34FCA000EB296 /* RHSideButtonAnimatorProtocol.swift in Sources */,
+				B1579ABD1DF34FCA000EB296 /* RHButtonViewConfigProtocol.swift in Sources */,
+				B1579AC11DF34FCA000EB296 /* RHTriggerButtonView.swift in Sources */,
+				B1579ABC1DF34FCA000EB296 /* RHButtonView.swift in Sources */,
+				B1579AC01DF34FCA000EB296 /* RHSideButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		E1D445AE1CEF79EE003AF888 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E1D445971CEF79ED003AF888 /* RHSideButtons */;
-			targetProxy = E1D445AD1CEF79EE003AF888 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E1D445A41CEF79ED003AF888 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1D445A51CEF79ED003AF888 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		E1D445B31CEF79EE003AF888 /* Debug */ = {
+		B1579AB01DF34F92000EB296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,14 +181,18 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -315,15 +210,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E1D445B41CEF79EE003AF888 /* Release */ = {
+		B1579AB11DF34F92000EB296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -335,14 +234,18 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -354,94 +257,74 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		E1D445B61CEF79EE003AF888 /* Debug */ = {
+		B1579AB31DF34F92000EB296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RHSideButtons/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		E1D445B71CEF79EE003AF888 /* Release */ = {
+		B1579AB41DF34F92000EB296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RHSideButtons/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		E1D445B91CEF79EE003AF888 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RHSideButtonsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtonsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHSideButtons.app/RHSideButtons";
-			};
-			name = Debug;
-		};
-		E1D445BA1CEF79EE003AF888 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RHSideButtonsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtonsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHSideButtons.app/RHSideButtons";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1D445931CEF79ED003AF888 /* Build configuration list for PBXProject "RHSideButtons" */ = {
+		B1579AA41DF34F92000EB296 /* Build configuration list for PBXProject "RHSideButtons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1D445B31CEF79EE003AF888 /* Debug */,
-				E1D445B41CEF79EE003AF888 /* Release */,
+				B1579AB01DF34F92000EB296 /* Debug */,
+				B1579AB11DF34F92000EB296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1D445B51CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtons" */ = {
+		B1579AB21DF34F92000EB296 /* Build configuration list for PBXNativeTarget "RHSideButtons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1D445B61CEF79EE003AF888 /* Debug */,
-				E1D445B71CEF79EE003AF888 /* Release */,
+				B1579AB31DF34F92000EB296 /* Debug */,
+				B1579AB41DF34F92000EB296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E1D445B81CEF79EE003AF888 /* Build configuration list for PBXNativeTarget "RHSideButtonsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1D445B91CEF79EE003AF888 /* Debug */,
-				E1D445BA1CEF79EE003AF888 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E1D445901CEF79ED003AF888 /* Project object */;
+	rootObject = B1579AA11DF34F92000EB296 /* Project object */;
 }

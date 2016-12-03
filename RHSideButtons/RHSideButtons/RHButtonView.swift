@@ -8,22 +8,22 @@
 
 import UIKit
 
-protocol RHButtonViewDelegate: class {
+public protocol RHButtonViewDelegate: class {
     func didSelectButton(_ buttonView: RHButtonView)
 }
 
-class RHButtonView: UIView, RHButtonViewConfigProtocol {
+public class RHButtonView: UIView, RHButtonViewConfigProtocol {
     
-    typealias BuildCellBlock = (RHButtonViewConfigProtocol) -> Void
+    public typealias BuildCellBlock = (RHButtonViewConfigProtocol) -> Void
     
-    weak var delegate: RHButtonViewDelegate?
+    public weak var delegate: RHButtonViewDelegate?
     
-    var bgColor: UIColor = UIColor.white {
+    public var bgColor: UIColor = UIColor.white {
         didSet {
             backgroundColor = bgColor
         }
     }
-    var image: UIImage? {
+    public var image: UIImage? {
         didSet {
             setupImageViewIfNeeded()
             updateImageView()
@@ -31,14 +31,14 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
             layoutIfNeeded()
         }
     }
-    var hasShadow: Bool = true {
+    public var hasShadow: Bool = true {
         didSet {
             hasShadow ? addShadow() : removeShadow()
             
             layoutIfNeeded()
         }
     }
-    var imgView: UIImageView?
+    public var imgView: UIImageView?
     
     fileprivate let overlayView = UIView()
     
@@ -48,13 +48,13 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
         setup()
     }
     
-    convenience init(builder: BuildCellBlock) {
+    convenience public init(builder: BuildCellBlock) {
         self.init(frame: CGRect.zero)
         
         builder(self)
     }
     
-    convenience init(builder: RHButtonViewConfigProtocol) {
+    convenience public init(builder: RHButtonViewConfigProtocol) {
         self.init(frame: CGRect.zero)
         
         bgColor = builder.bgColor
@@ -62,11 +62,11 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
         hasShadow = builder.hasShadow
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         // View Appearance
@@ -131,15 +131,15 @@ class RHButtonView: UIView, RHButtonViewConfigProtocol {
         overlayView.backgroundColor = selected ? UIColor.black.withAlphaComponent(0.2) : UIColor.clear
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         adjustAppearanceForStateSelected(true)
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         adjustAppearanceForStateSelected(false)
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         delegate?.didSelectButton(self)
         adjustAppearanceForStateSelected(false)
     }
