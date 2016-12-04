@@ -1,6 +1,4 @@
-<p align="center">
-<img src ="./ReadmeAssets/RHSideButtonsHeadLogo.png" width="800" height="300"/>
-</p>
+![](./ReadmeAssets/RHSideButtonsHeadLogo.png)
 
 [![Version](https://img.shields.io/cocoapods/v/RHSideButtons.svg?style=flat)](http://cocoadocs.org/docsets/RHSideButtons)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
