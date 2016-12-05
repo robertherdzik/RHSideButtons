@@ -12,7 +12,7 @@ Library provides easy to implement variation of Android (Material Design) Floati
 <iframe src="https://appetize.io/embed/zanve819jr7g7dmh326a924pq4?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
 
 ## Installation
-You can install RHSideButtons library using Cocoapods:
+You can install RHSideButtons library using CocoaPods:
 ```
 pod 'RHSideButtons'
 ```
