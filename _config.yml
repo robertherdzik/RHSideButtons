@@ -1,0 +1,8 @@
+title: RHSideButtons
+description: Library provides easy to implement variation of Android (Material Design) Floating Action Button for iOS. You can use it as your app small side menu. 🌶
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
