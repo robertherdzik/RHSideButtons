@@ -61,7 +61,9 @@ func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
 func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 ```
 
+<p align="center">
 <img src ="./Demo/RHSideButtons.gif" width="360" height="640"/>
+</p>
 
 ## Support for left-handers :)
 If you decide to position RHSideButtons on the left site of view, buttons will dissapears to the left side of screen automatically.
@@ -70,9 +72,9 @@ e.g.:
 ```swift
 sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
 ```
-
+<p align="center">
 <img src ="./Demo/RHSideButtons_Left.gif" width="360" height="640"/>
-
+</p>
 
 ## Check the Demo project 
 
