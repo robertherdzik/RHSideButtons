@@ -1,0 +1,6 @@
+framework module RHSideButtons {
+  umbrella header "RHSideButtons-umbrella.h"
+
+  export *
+  module * { export * }
+}
