@@ -9,7 +9,6 @@
 Library provides easy to implement variation of Android (Material Design) Floating Action Button for iOS. You can use it as your app small side menu. 🌶
 
 ## Play with it 😎
-<iframe src="https://appetize.io/embed/zanve819jr7g7dmh326a924pq4?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no"></iframe>
 
 ## Installation
 You can install RHSideButtons library using CocoaPods:
