@@ -121,6 +121,7 @@
 				TargetAttributes = {
 					B1579AA91DF34F92000EB296 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -282,7 +283,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -300,7 +302,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = x.RHSideButtons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -323,6 +326,7 @@
 				B1579AB41DF34F92000EB296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
