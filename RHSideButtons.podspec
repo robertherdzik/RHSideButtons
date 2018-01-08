@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "RHSideButtons"
-s.version      = "1.0.3"
+s.version      = "1.1.0"
 s.summary      = "Library provides easy to implement variation of Android (Material Design) Floating Action Button for iOS. You can use it as your app small side menu."
 s.description  = "Library provides easy to implement variation of Android (Material Design) Floating Action Button for iOS. You can use it as your app small side menu."
 s.homepage     = "https://github.com/robertherdzik/RHSideButtons"
