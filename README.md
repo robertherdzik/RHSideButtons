@@ -100,6 +100,7 @@ sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
 | ------------- |:-------------:| 
 | 1.0   | 2.2 |
 | 1.0.1   | 3.0 |
+| 1.1.0   | 4.0 |
 
 ## Check the Demo project 
 
