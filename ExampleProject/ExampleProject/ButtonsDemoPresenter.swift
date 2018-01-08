@@ -23,11 +23,11 @@ class ButtonsDemoPresenter: NSObject {
         perform(#selector(delayHide), with: nil, afterDelay: 2)
     }
     
-    func delayShow() {
+    @objc func delayShow() {
         mainViewController?.castView().sideButtonsView?.showButtons()
     }
     
-    func delayHide() {
+    @objc func delayHide() {
         mainViewController?.castView().sideButtonsView?.hideButtons()
     }
 }
