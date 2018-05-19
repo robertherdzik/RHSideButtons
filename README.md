@@ -1,4 +1,4 @@
-![](./ReadmeAssets/RHSideButtonsHeadLogo.png)
+![](./ReadmeAssets/RHSideButtonsHeadLogo.gif)
 
 [![Version](https://img.shields.io/cocoapods/v/RHSideButtons.svg?style=flat)](http://cocoadocs.org/docsets/RHSideButtons)
 [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
@@ -87,7 +87,7 @@ If you decide to position RHSideButtons on the left site of view, buttons will d
 
 e.g.:
 ```swift
-sideBttns?.setTriggerButtonPosition(25, y: frame.size.height - 85))
+sideBttns?.setTriggerButtonPosition(CGPoint(25, y: frame.size.height - 85))
 ```
 
 <p align="center">
