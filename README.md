@@ -87,7 +87,7 @@ If you decide to position RHSideButtons on the left site of view, buttons will d
 
 e.g.:
 ```swift
-sideBttns?.setTriggerButtonPosition(CGPoint(25, y: frame.size.height - 85))
+sideBttns?.setTriggerButtonPosition(CGPoint(x:25, y: frame.size.height - 85))
 ```
 
 <p align="center">
