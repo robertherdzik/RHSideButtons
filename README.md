@@ -79,7 +79,7 @@ func sideButtons(sideButtons: RHSideButtons, didSelectButtonAtIndex index: Int)
 func sideButtons(sideButtons: RHSideButtons, didTriggerButtonChangeStateTo state: RHButtonState)
 ```
 <p align="center">
-<img src ="./Demo/RHSideButtons.gif" width="252" height="448" align="center"/>
+<img src ="./Demo/RHSideButtons.gif" width="252"align="center"/>
 </p>
 
 ## Support for left-handers :)
@@ -91,7 +91,7 @@ sideBttns?.setTriggerButtonPosition(CGPoint(25, y: frame.size.height - 85))
 ```
 
 <p align="center">
-<img src ="./Demo/RHSideButtons_Left.gif" width="252" height="448" align="center"/>
+<img src ="./Demo/RHSideButtons_Left.gif" width="252" align="center"/>
 </p>
 
 
