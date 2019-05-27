@@ -54,6 +54,7 @@ public class RHSideButtons {
         didSet {
             aniamateButtonForState(state) {}
             markTriggerButtonAsPressed(state == .shown)
+            delegate?.sideButtons(self, didTriggerButtonChangeStateTo: state)
             buttonsAnimator.animateTriggerButton(triggerButton, state: state) {}
         }
     }
@@ -211,8 +212,6 @@ extension RHSideButtons: RHButtonViewDelegate {
             state = .hidden
         } else {
             state = state == .shown ? .hidden : .shown
-            
-            delegate?.sideButtons(self, didTriggerButtonChangeStateTo: state)
         }
     }
 }
