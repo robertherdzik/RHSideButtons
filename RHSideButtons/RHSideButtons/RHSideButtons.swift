@@ -86,7 +86,7 @@ public class RHSideButtons {
         triggerButton.delegate = self
         
         parentView.addSubview(triggerButton)
-        parentView.bringSubview(toFront: triggerButton)
+        parentView.bringSubviewToFront(triggerButton)
     }
     
     fileprivate func setDefaultTriggerButtonPosition() {
@@ -136,7 +136,7 @@ public class RHSideButtons {
             
             button.delegate = self
             parentView?.addSubview(button)
-            parentView?.bringSubview(toFront: button)
+            parentView?.bringSubviewToFront(button)
             buttonsArr.append(button)
         }
     }
