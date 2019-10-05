@@ -128,11 +128,11 @@
 			};
 			buildConfigurationList = B1579AA41DF34F92000EB296 /* Build configuration list for PBXProject "RHSideButtons" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = B1579AA01DF34F92000EB296;
 			productRefGroup = B1579AAB1DF34F92000EB296 /* Products */;
